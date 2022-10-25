@@ -9,10 +9,10 @@ ul {
     padding:2rem;
     gap:2rem;
     justify-content: center;
+    flex:auto;
 
 }
 li{
-    flex:0 0 5vw;
     list-style-type:none;
 }
 .nav-links {
@@ -41,16 +41,12 @@ li{
     text-align:center;
 }
 
-#Home .btn-container {
-  position:relative;
-  width:50%;  
-}
 #Home .btn-container .btn {
     color:white;
     background-color: #555;
     position:absolute;
-    top:50%;
-    left:50%;
+    bottom:-15%;
+    left:51.5%;
     transform:translate(-70%,50%);
     font-size:16px;
     padding:12px 24px;
@@ -62,8 +58,10 @@ li{
     background-color:black;
 }
 .coffee-logo {
-    width:100%;
-    height:auto;
+    width:50%;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 #Infos h1 {
