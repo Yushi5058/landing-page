@@ -1,37 +1,141 @@
-.hero, footer {
-    background-color: #1F2937;
+/* navbar */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-.hero h1 {
-    font-size:48px;
-    font-weight:bolder;
-    color:#F9FAF8;
-}
-.hero p, .hero input {
-    font-size:18px;
-    color:#E5E7EB;
-}
-header h1 {
-    font-size:24px;
-    color:#F9FAF8;
-}
-input {
-    color:#3882F6;
-}
-#Cart {
-    background-color:#3882F6;
-}
-.coffee-quote {
-    background-color:#E5E7EB;
-}
-#Informations h1 {
-    font-size:36px;
-    font-weight:bolder;
-    color:#1F2937;
-}
-.coffee-quote.quote {
-    font-size:36px;
-    font-style:italic;
-    color:#1F2937;
+ul {
+    display:flex;
+    padding:2rem;
+    gap:2rem;
+    justify-content: center;
 
 }
+li{
+    flex:0 0 5vw;
+    list-style-type:none;
+}
+.nav-links {
+    color:white;
+    text-decoration:none;
+}
+.header-logo{
+    background-color:black;
+    margin:2rem;
+}
+.header-logo h1 {
+    color:white;
+    text-align: center;
+    font-size:3rem;
+    text-decoration:underline;
+}
+.nav-links:hover {
+    color:gray;
+}
+#Home h1 {
+    text-align:center;
+    text-decoration:underline;
+}
+#Home p {
+    padding:1.5em;
+    text-align:center;
+}
+}
+#Home .btn-container {
+  position:relative;
+  width:50%;  
+}
+#Home .btn-container .btn {
+    color:white;
+    background-color: #555;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-70%,50%);
+    font-size:16px;
+    padding:12px 24px;
+    border:none;
+    cursor:pointer;
+    border-radius:5px;
+}
+#Home .btn-container .btn:hover{
+    background-color:black;
+}
+.coffee-logo {
+    width:100%;
+    height:auto;
+}
+
+#Informations h1 {
+    padding:1.5em;
+    text-align: center;
+    text-decoration:underline;
+}
+figure {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2rem;
+}
+
+figure img {
+    width:100px;
+    height:100px;
+    border:10px double black
+}
+figcaption {
+    font-size:16px;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+figcaption:last-child{
+    padding:2em;
+}
+.coffee-quote {
+    padding: 4em;
+    text-align: center;
+    border:10px solid 
+}
+#Cart h1 {
+    text-align: center;
+    font-size:25px;
+    padding:2em;
+}
+#Cart h1:hover{
+    color:red;
+}
+#Cart p {
+    text-align: left;
+    padding:1em;
+    font-family: monospace;
+}
+
+#Cart .btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Cart .btn-container .btn:hover{
+    background-color:black;
+}
+#Cart .btn {
+    color:white;
+    background-color: #555;
+    font-size:16px;
+    padding:12px 24px;
+    border:none;
+    cursor:pointer;
+    border-radius:5px;
+    margin:2em;
+}
+
+footer {
+    padding:2em;
+    text-align: center;
+    background-color: black;
+    color:white;
+}
+
 

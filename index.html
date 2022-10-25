@@ -1,58 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kopf-fee</title>
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <main>
-    <section class="hero">
+      <section class="hero">
         <header class="header-logo">
-            <h1>Kopf-fee</h1>
-            <nav>
-                <ul>
-                    <li><a href="#Home">Home</a></li>
-                    <li><a href="#Informations">Informations</a></li>
-                    <li><a href="#Cart">Cart</a></li>
-                </ul>
-            </nav>
+          <h1>Kopf-fee</h1>
+          <div class="nav-bar">
+            <ul>
+              <li><a class="nav-links" href="#Home">Home</a></li>
+              <li>
+                <a class="nav-links" href="#Informations">Informations</a>
+              </li>
+              <li><a class="nav-links" href="#Cart">Cart</a></li>
+            </ul>
+          </div>
         </header>
-        </section>
-        <section id="Home">
+      </section>
+      <section id="Home">
         <h1>Coffee for less headaches</h1>
         <p>The best Coffee for headaches</p>
-        <input type="button" value="Sign up">
-        <img src="/images/coffee-image.jpg" alt="coffee-image">
-        </section>
-        
-    <section id="Informations">
+        <div class="btn-container">
+          <img
+          class="coffee-logo"
+          src="/images/coffee-image.jpg"
+          alt="coffee-image"
+        />
+        <button class="btn">Sign up</button>
+        </div>
+      </section>
+
+      <section id="Informations">
         <h1>Get rid of headaches right now!</h1>
         <figure>
-            <img src="/images/coffee-heart.jpg" alt="coffee-heart">
-            <figcaption>Makes your heart beats fast and makes you excited about new events and things coming, be prepared to have your heart on fire!</figcaption>
-            <img src="/images/coffee-morning.jpg" alt="coffee-morning">
-            <figcaption>The best thing to begin your morning. With it, you can be fully awake and focus for the work you're supposed to do. Get some motivation! But do we really need it when it comes to discipline with a full love of coffee?</figcaption>
-            <img src="/images/coffee-grains.jpg" alt="coffee-grains">
-            <figcaption>One of the best grains that can help you get rid of headaches with its own formula. More blood flow in the brain, less headaches! But do not exceed the minimal dose: 400mg per day. A good 120mg is sufficient. Kopf-fee? Headache free! </figcaption> 
+          <img src="/images/coffee-heart.jpg" alt="coffee-heart" />
+          <figcaption>
+            Makes your heart beats fast and makes you excited about new events
+            and things coming, be prepared to have your heart on fire!
+          </figcaption>
+          <img src="/images/coffee-morning.jpg" alt="coffee-morning" />
+          <figcaption>
+            The best thing to begin your morning. With it, you can be fully
+            awake and focus for the work you're supposed to do. Get some
+            motivation! But do we really need it when it comes to discipline
+            with a full love of coffee?
+          </figcaption>
+          <img src="/images/coffee-grains.jpg" alt="coffee-grains" />
+          <figcaption>
+            One of the best grains that can help you get rid of headaches with
+            its own formula. More blood flow in the brain, less headaches! But
+            do not exceed the minimal dose: 400mg per day. A good 120mg is
+            sufficient. Kopf-fee? Headache free!
+          </figcaption>
         </figure>
-    </section>
-    <section class="coffee-quote">
-        <p class="quote">Adventure in life is good. Consistency in coffee even better.</p>
+      </section>
+      <section class="coffee-quote">
+        <p class="quote">
+          Adventure in life is good. Consistency in coffee even better.
+        </p>
         <p>- Justina Headley</p>
-    </section>
-    <section id="Cart">
+      </section>
+      <section id="Cart">
         <h1>What are you waiting! Coffee tastes better when hot!</h1>
         <p>Sign up for our product by clicking that button right over there!</p>
-        <input type="button" value="Sign up">
-    </section>
+        <div class="btn-container">
+          <button class="btn">Sign up</button>
+          </div>
+      </section>
     </main>
-    
-    <footer>
-        <p>Copyright © Yushi_61 2022</p>
-    </footer>
 
-    
-</body>
+    <footer>
+      <p>Copyright © Yushi_61 2022</p>
+    </footer>
+  </body>
 </html>
