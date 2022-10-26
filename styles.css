@@ -1,15 +1,16 @@
-/* navbar */
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
+/*navbar */
 ul {
     display:flex;
     padding:2rem;
     gap:2rem;
-    justify-content: center;
-    flex:auto;
+    justify-content:center;
+    flex:0 0 5vw;
 
 }
 li{
@@ -19,15 +20,26 @@ li{
     color:white;
     text-decoration:none;
 }
+
+.nav-container { 
+    width:50%;
+    margin:0 auto;
+}
 .header-logo{
     background-color:black;
     margin:2rem;
 }
 .header-logo h1 {
     color:white;
-    text-align: center;
-    font-size:3rem;
     text-decoration:underline;
+    font-size:3rem;
+    text-align:center;
+    position:relative;
+    left:35px;
+}
+
+.header-logo h1:hover {
+    color:gray;
 }
 .nav-links:hover {
     color:gray;
@@ -41,28 +53,29 @@ li{
     text-align:center;
 }
 
-#Home .btn-container .btn {
-    color:white;
-    background-color: #555;
-    position:absolute;
-    bottom:-15%;
-    left:51.5%;
-    transform:translate(-70%,50%);
-    font-size:16px;
-    padding:12px 24px;
-    border:none;
-    cursor:pointer;
-    border-radius:5px;
-}
 #Home .btn-container .btn:hover{
     background-color:black;
 }
-.coffee-logo {
-    width:50%;
-    display:block;
-    margin-left:auto;
-    margin-right:auto;
+
+.fa-coffee { 
+    color:white;
+    float:right;
+    font-size:3.5rem;
+    position:relative;
+    top:15px;
+    right:110px;
+   
 }
+
+.fa-coffee:hover {
+    color:gray;
+}
+.fa-coffee::after{
+    content:'';
+    display:block;
+    clear:both;
+}
+
 
 #Infos h1 {
     padding:1.5em;
@@ -108,17 +121,15 @@ figcaption:last-child{
     padding:1em;
     font-family: monospace;
 }
-
-#Cart .btn-container {
+ .btn-container {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
-#Cart .btn-container .btn:hover{
+ .btn-container .btn:hover{
     background-color:black;
 }
-#Cart .btn {
+ .btn {
     color:white;
     background-color: #555;
     font-size:16px;
