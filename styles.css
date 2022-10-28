@@ -4,6 +4,67 @@
     padding: 0;
 }
 
+html {
+    font-size:62.5%;
+}
+
+:root {
+    --color-primary:#D4A373;
+    --color-secondary:#FAEDCD;
+    --color-text-primary:black;
+    --color-button:#E5C7AB;
+}
+
+body {
+    background-color: var(--color-secondary);
+}
+
+/* Style Titles */
+h1 {
+    font-size:3rem;
+    color:var(--color-text-primary);
+    font-weight:lighter;
+    text-align:left;
+    padding:0 2rem;
+}
+
+/* Style Paragraphs */
+
+p, figcaption {
+    font-size:1.5rem;
+    text-align:left;
+    margin:.8em;
+    font-style: italic;
+    padding:1em;
+}
+/* Style quote */
+.quote::before {
+        content: open-quote;
+        font-size: 2.5em;
+        color: orange;
+      }
+.quote::after {
+        content: close-quote;
+        font-size: 2.5em;
+        color: orange;
+      }
+.quote {
+        padding:2em;
+        margin:.8em;
+        font-size: 2em;
+        text-align: center;
+        
+
+      }
+      .coffee-quote > p {
+        text-align: center;
+        font-size: 1.5em;
+        font-style: italic;
+        margin-left: auto;
+        margin-right: -30%;
+      }
+      
+
 /*navbar */
 ul {
     display:flex;
@@ -15,61 +76,55 @@ ul {
 }
 li{
     list-style-type:none;
+    font-size:1.5em;
 }
 .nav-links {
-    color:white;
+    color:var(--color-text-primary);
     text-decoration:none;
 }
-
-.nav-container { 
-    width:50%;
-    margin:0 auto;
+.nav-links:hover {
+    color:var(--color-secondary);
 }
-.header-logo{
-    background-color:black;
+/* Header section : */
+header { 
+    background-color:var(--color-primary);
     margin:2rem;
 }
-.header-logo h1 {
-    color:white;
-    text-decoration:underline;
-    font-size:3rem;
-    text-align:center;
-    position:relative;
-    left:35px;
+
+header h1 {
+    color:var(--color-secondary);
+    font-size:5em;
+    font-weight:bolder;
+    text-align: center;
+}
+ /* Button Section :  */
+.btn-container .btn {
+background-color:var(--color-primary);
 }
 
-.header-logo h1:hover {
-    color:gray;
-}
-.nav-links:hover {
-    color:gray;
-}
-#Home h1 {
-    text-align:center;
-    text-decoration:underline;
-}
-#Home p {
-    padding:1.5em;
-    text-align:center;
+ .btn-container .btn:hover{
+    background-color:var(--color-button);
 }
 
-#Home .btn-container .btn:hover{
-    background-color:black;
+.btn {
+    color:var(--color-text-primary);
+    font-size:1.5em;
+    padding:1em 2em;
+    border:none;
+    cursor:pointer;
+    border-radius:5px;
+    margin:2em;
 }
 
+/* Coffee Icon */
 .fa-coffee { 
-    color:white;
-    float:right;
-    font-size:3.5rem;
-    position:relative;
-    top:15px;
-    right:110px;
-   
+    color:var(--color-secondary);
+    font-size:3rem;
+    position:absolute;
+    top:5%;
+    left:80%;
 }
 
-.fa-coffee:hover {
-    color:gray;
-}
 .fa-coffee::after{
     content:'';
     display:block;
@@ -77,74 +132,22 @@ li{
 }
 
 
-#Infos h1 {
-    padding:1.5em;
-    text-align: center;
-    text-decoration:underline;
-}
-figure {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    gap:2rem;
-}
-
 figure img {
     width:100px;
     height:100px;
-    border:10px double black
-}
-figcaption {
-    font-size:16px;
-    font-style: italic;
-    font-family: 'Courier New', Courier, monospace;
-    
-}
-figcaption:last-child{
-    padding:2em;
-}
-.coffee-quote {
-    padding: 4em;
-    text-align: center;
-    border:10px solid 
-}
-#Cart h1 {
-    text-align: center;
-    font-size:25px;
-    padding:2em;
-}
-#Cart h1:hover{
-    color:red;
-}
-#Cart p {
-    text-align: left;
-    padding:1em;
-    font-family: monospace;
-}
- .btn-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
- .btn-container .btn:hover{
-    background-color:black;
-}
- .btn {
-    color:white;
-    background-color: #555;
-    font-size:16px;
-    padding:12px 24px;
-    border:none;
-    cursor:pointer;
-    border-radius:5px;
-    margin:2em;
+    float:right;
 }
 
+
+
+
 footer {
+    font-size:2em;
+    font-weight:200;
     padding:2em;
     text-align: center;
-    background-color: black;
-    color:white;
+    background-color:var(--color-primary);
+    color:var(--color-text-primary);
 }
 
 
