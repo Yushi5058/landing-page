@@ -6,17 +6,19 @@
 
 html {
     font-size:62.5%;
+    scroll-behavior: smooth;
 }
 
 :root {
     --color-primary:#D4A373;
     --color-secondary:#FAEDCD;
     --color-text-primary:black;
-    --color-button:#E5C7AB;
+    --color-button: #ffa14a;
 }
 
 body {
     background-color: var(--color-secondary);
+    line-height: 1.5;
 }
 
 /* Style Titles */
@@ -33,30 +35,32 @@ h1 {
 p, figcaption {
     font-size:1.5rem;
     text-align:left;
-    margin:.8em;
-    font-style: italic;
-    padding:1em;
+    margin:.8em auto;
+    padding:0 1em;
 }
 /* Style quote */
 .quote::before {
         content: '"';
-        font-size: 3em;
+        font-size: 2em;
         color: var(--color-button);
       }
 .quote::after {
         content: '"';
-        font-size: 3em;
+        font-size: 2em;
         color:var(--color-button);
       }
 .quote {
         display:block;
         margin:0 auto;
-        padding:2em;
+        padding:0 1.5em;
         font-size: 2em;
+        line-height: 1.6;
+        text-align: center;
+}
 
-        
-        
-
+.coffee-quote > p {
+    font-style:italic;
+    text-align:right;
 }
 
 /*navbar */
@@ -82,14 +86,15 @@ li{
 /* Header section : */
 header { 
     background-color:var(--color-primary);
-    margin:2rem;
+    margin-bottom:2rem;
+    border-radius: 0 0 5rem 5rem;
 }
 
-header h1 {
+ header h1 {
     color:var(--color-secondary);
-    font-size:5em;
-    font-weight:bolder;
-    text-align: center;
+    font-size:2.5em;
+    padding:0 1rem;
+    text-align:left;
 }
  /* Button Section :  */
 .btn-container .btn {
@@ -115,8 +120,8 @@ background-color:var(--color-primary);
     color:var(--color-secondary);
     font-size:3rem;
     position:absolute;
-    top:5%;
-    left:80%;
+    top:0.25em;
+    left:4em;
 }
 
 .fa-coffee::after{
@@ -125,11 +130,11 @@ background-color:var(--color-primary);
     clear:both;
 }
 
-
+/* image section */
 figure img {
-    width:100px;
-    height:100px;
-    float:right;
+    max-width:100%;
+    display:block;
+    object-fit:cover;
 }
 
 
@@ -138,8 +143,8 @@ figure img {
 footer {
     font-size:2em;
     font-weight:200;
-    padding:2em;
     text-align: center;
+    border-radius: 5rem 5rem 0 0;
     background-color:var(--color-primary);
     color:var(--color-text-primary);
 }
